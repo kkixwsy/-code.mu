@@ -1,0 +1,507 @@
+h1,h2, h3 {
+	text-align: center;
+}
+
+
+h1,h2, h3 {
+	text-align: center;
+}
+h2 {
+	color: blue;
+}
+h3 {
+	font-size: 16px;
+	color: red;
+}
+
+
+h1,h2, h3 {
+	text-align: center;
+	color: red;
+}
+h3 {
+	font-size: 16px;
+}
+
+
+ul li i {
+	color: red;
+}
+p i {
+	color: green;
+}
+p b i {
+	color: red;
+}
+
+
+ul li > b {
+	color: red;
+}
+
+
+
+.odd {
+	color: red;
+}
+.eve {
+	color: green;
+}
+.eee {
+	color: red;
+}
+
+.xxx {
+	font-size: 30px;
+}
+
+
+.block1 {
+	color: red;
+}
+.block2 {
+	color: green;
+}
+.block3 {
+	color: blue;
+}
+.block4 {
+	color: red;
+}
+.block5 {
+	color: green;
+}
+
+
+
+
+
+
+.eee {
+	font-size: 20px;
+}
+.zzz {
+	font-size: 30px;
+}
+.eee, .zzz {
+	line-height: 1.5;
+        font-family: Arial;
+}
+
+
+
+
+
+
+
+.eee {
+	font-size: 20px;
+}
+.zzz {
+	font-size: 30px;
+}
+.ggg {
+	font-size: 35px;
+}
+.eee, .zzz, .ggg {
+	text-align: center;
+	font-family: Arial;
+}
+
+
+
+
+
+.header {
+	color: red;
+}
+h2.header{
+        font-size: 40px;
+}
+h3.header{
+        font-size: 30px;
+}
+
+
+
+
+
+
+.eee i{
+	color: red;
+}
+
+
+
+
+
+
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+.large {
+  font-size: 30px;
+}
+.small {
+  font-size: 20px;
+}
+
+
+
+
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+
+
+
+
+#elem1 {
+  color: red;
+}
+
+#elem2 {
+  color: green;
+}
+
+#elem3 {
+  color: blue;
+}
+
+
+
+#block {
+  background-color: lightgray;
+}
+
+.text {
+  color: blue;
+}
+
+
+#elem .text {
+  color: green;
+}
+
+
+
+#elem p.text {
+  color: blue;
+}
+
+
+
+#elem li.text {
+  color: orange;
+}
+
+
+
+
+.eee.zzz.ccc {
+  color: red;
+}
+
+
+
+#block h1,
+#block h2 {
+  text-align: center;
+}
+
+
+
+#block h1,
+#block h2 {
+  text-align: center;
+}
+
+#block h1 {
+  font-size: 30px;
+}
+
+#block h2 {
+  font-size: 20px;
+}
+
+
+
+#block h1,
+#block h2,
+#block h3 {
+  text-align: center;
+}
+
+#block h2 {
+  color: blue;
+}
+
+#block h3 {
+  font-size: 16px;
+  color: red;
+}
+
+
+
+#block h1.eee,
+#block h2.zzz {
+  text-align: center;
+}
+
+#block h1.eee {
+  font-size: 30px;
+}
+
+#block h2.zzz {
+  font-size: 20px;
+}
+
+
+
+.xxx .kkk,
+.eee h2.zzz,
+#eee h2 {
+  text-align: center;
+}
+
+
+
+.eee h2.zzz,
+.xxx {
+  text-align: center;
+}
+
+
+div p { }
+
+div h2 { }
+
+#block p { }
+
+#block h2 { }
+
+.bbb { }
+
+#block .bbb { }
+
+p.bbb { }
+
+h2.bbb { }
+
+#block p.bbb { }
+
+.bbb, .xxx { }
+
+p.bbb, h2.xxx { }
+
+#block p.bbb, #block p.xxx { }
+
+.fff { }
+
+.fff p { }
+
+p.fff { }
+
+.fff .bbb { }
+
+.fff h2.bbb { }
+
+
+#elem + li { }
+
+.elem + li { }
+
+
+#elem ~ li { }
+
+main * p { }
+
+
+
+[title] { }
+
+p[title] { }
+
+p[title="hello"] { }
+
+a[href^="http://"] { }
+
+a[href$=".html"] { }
+
+p[title*="hello"] { }
+
+p[class^="top-"] { }
+
+
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+#test a {
+  color: red;
+}
+#test a:hover {
+  text-decoration: none;
+}
+
+
+
+a.zzz { color: red; }
+a.zzz:hover { text-decoration: none; }
+
+#block a.zzz { color: red; }
+#block a.zzz:hover { text-decoration: none; }
+
+.block a.zzz { color: red; }
+.block a.zzz:hover { text-decoration: none; }
+
+
+
+
+.list-container1 li:first-child {
+	color: red;
+}
+
+
+
+.list-container2 li:last-child {
+	color: green;
+}
+
+
+
+.list-container3 li:last-child {
+	color: green;}
+.list-container3 li:first-child {
+	color: red;
+}
+
+
+
+
+.list-container4 li:nth-child(3) {
+	color: red;
+}
+
+
+
+
+.list-container5 li:nth-child(odd) {
+	color: red;
+}
+.list-container5 li:nth-last-child(even) {
+	color: green;
+}
+
+
+
+
+.list-container6 li:nth-child(3n) {
+	color: red;
+}
+
+
+
+.list-container7 li:last-child(3) {
+	color: red;
+}
+
+
+
+.list-container8 li:only-child {
+	color: red;
+}
+
+ul {
+	margin-bottom: 10px;
+}
+
+
+
+
+.list-container9 li:empty {
+	border: 1px solid blue;
+	width: 100px;
+}
+.list-container9 li {
+	border: 1px solid red;
+	width: 100px;
+}
+
+
+
+/* Первый элемент своего типа */
+.smt p:first-of-type {
+  color: blue;
+}
+
+/* Последний элемент своего типа */
+.smt p:last-of-type {
+  color: green;
+}
+
+/* Второй элемент типа <li> */
+.smt li:nth-of-type(2) {
+  background-color: yellow;
+}
+
+/* Второй элемент с конца типа <li> */
+.smt li:nth-last-of-type(2) {
+  background-color: orange;
+}
+
+/* Единственный элемент типа <h2> */
+.smt h2:only-of-type {
+  font-weight: bold;
+  color: red;
+}
+
+
+
+
+.list-container10 li:not(.elem) { }
+
+.list-container11 li:not(:first-of-type) { }
+
+.list-container12 li:not(:first-of-type):not(:last-of-type) { }

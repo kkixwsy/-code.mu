@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.aaa .parent {
+  width: 1500px;
+    height: 700px;
+  border: 1px solid red;
+  text-align: justify;
+}
+.aaa .child {
+  float: left;
+  width: 200px;
+  height: 100px;
+  border: 1px solid green;
+}
+
+.aaa .clearfix {
+  clear: both;
+}
+
+.aab .parent {
+  width: 1500px;
+    height: 700px;
+  border: 1px solid red;
+  text-align: justify;
+}
+.aab .child {
+  float: right;
+  width: 200px;
+  height: 100px;
+  border: 1px solid green;
+}
+
+.aab .clearfix {
+  clear: both;
+}
+
+
+.aac .parent {
+    flex-direction: column;
+    display: flex;
+  width: 1500px;
+    height: 700px;
+  border: 1px solid red;
+  text-align: justify;
+}
+.aac .child {
+  float: right;
+  width: 200px;
+  height: 100px;
+  border: 1px solid green;
+}
+
+
+.aad .parent {
+    flex-direction: column-reverse;
+    display: flex;
+  width: 1500px;
+    height: 700px;
+  border: 1px solid red;
+  text-align: justify;
+}
+.aad .child {
+  float: right;
+  width: 200px;
+  height: 100px;
+  border: 1px solid green;
+
+}
+
+.parent {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.child {
+  border: 1px solid green; /* зелёные рамки ячеек */
+  width: 100px;
+  height: 50px;
+}
+
+.paren {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.pare {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.par {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.pa {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+
+.p {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+
+.po {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.pi {
+  display: flex;
+  border: 1px solid brown; /* красная рамка вокруг всего блока */
+  height: 300px;           /* примерная высота, как на изображении */
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

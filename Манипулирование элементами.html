@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все задачи: Вставка, удаление, клонирование, массивы</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+        .task-section { margin-bottom: 40px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f9f9f9; }
+        .task-section h3 { margin-top: 0; border-bottom: 1px dashed #ccc; padding-bottom: 10px; margin-bottom: 20px; }
+        ul, ol { margin-left: 30px; padding-left: 0; }
+        li { margin-bottom: 5px; cursor: pointer; }
+        li:hover { background-color: #eef; }
+        input, button { margin-top: 5px; padding: 5px 10px; border-radius: 4px; }
+        button { cursor: pointer; background-color: #28a745; color: white; border: none; }
+        button:hover { background-color: #218838; }
+        div#elem { border: 1px solid red; padding: 5px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Новые задачи 1–4 -->
+    <div class="task-section">
+        <h3>Задача 1: Вставка элемента LI</h3>
+        <ol id="task1-list-before"></ol>
+        <ol id="task1-list-after"></ol>
+    </div>
+
+    <div class="task-section">
+        <h3>Задача 2: Добавление LI по клику с обработчиком</h3>
+        <ol id="task2-list"></ol>
+        <button id="task2-add-btn">Добавить элемент</button>
+    </div>
+
+    <div class="task-section">
+        <h3>Задача 3: Создание элементов в цикле</h3>
+        <ul id="task3-list"></ul>
+    </div>
+
+    <div class="task-section">
+        <h3>Задача 4: 5 инпутов с обработкой потери фокуса</h3>
+        <div id="task4-parent"></div>
+        <p id="task4-paragraph">Текст из инпута появится здесь...</p>
+    </div>
+
+    <!-- Старые объединенные задачи -->
+    <div class="task-section">
+        <h3>Старые задачи: удаление, вставка, клонирование, массивы</h3>
+
+        <h4>Удаление LI по клику</h4>
+        <ul id="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <h4>Удаление последнего LI по кнопке</h4>
+        <ul id="parent">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <input type="button" id="button" value="Удалить последний">
+
+        <h4>Вставка элементов в UL</h4>
+        <ul id="elem">
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+
+        <ul id="parent1">
+            <li>text</li>
+            <li>text</li>
+            <li id="elem1">text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+
+        <div id="elem-div">
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
+
+        <input type="text" id="inputClone">
+        <button id="cloneButton">Клонировать инпут</button>
+        <div id="inputContainer"></div>
+
+        <div id="parentArray"></div>
+
+        <ul id="listFromArray"></ul>
+    </div>
+
+    <script src="manipulo.js"></script>
+</body>
+</html>

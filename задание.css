@@ -1,0 +1,23 @@
+.bold {
+  font-weight: 700; /* жирный */
+}
+
+.italic {
+  font-style: italic; /* курсив */
+}
+
+.bold-italic {
+  font-weight: 700;
+  font-style: italic; /* и жирный, и курсив */
+}
+
+/* Общие */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 12px;
+}

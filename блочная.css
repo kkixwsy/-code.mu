@@ -1,0 +1,97 @@
+ #parent {
+      width: 300px;
+      border: 1px solid red;
+    }
+    #child {
+      height: 100px;
+      border: 1px solid green;
+      margin-top: 20px;
+      margin-right: 40px;
+      margin-bottom: 60px;
+      margin-left: 80px;
+    }
+
+ #par {
+      width: 200px;
+      border: 1px solid red;
+    }
+    #chil {
+      height: 100px;
+      border: 1px solid green;
+      margin-top: 20px;
+      margin-right: 40px;
+      margin-bottom: 60px;
+      margin-left: 80px;
+    }
+
+ #pa {
+      width: 200px;
+      border: 1px solid red;
+    }
+    #chi {
+      height: 170px;
+      border: 1px solid green;
+      margin-top: 20px;
+      margin-right: 40px;
+      margin-bottom: 30px;
+      margin-left: 80px;
+    }
+
+ #pak {
+      width: 200px;
+      border: 1px solid rgb(245, 146, 33);
+    }
+    #chip {
+      height: 200px;
+      border: 1px solid rgb(79, 147, 243);
+      margin-top: 20px;
+      margin-right: 40px;
+      margin-bottom: 30px;
+      margin-left: 80px;
+    }
+
+#elem {
+	padding: 30px;
+	width: 200px;
+	border: 1px solid red;
+	text-align: justify;
+}
+
+#ele {
+	padding: 20px;
+	width: 600px;
+	border: 1px solid green;
+	text-align: justify;
+}
+
+#el {
+	padding: 10px;
+	width: 300px;
+	border: 1px solid red;
+	text-align: justify;
+}
+
+#elo {
+	padding-top:    50px; /* сверху */
+	padding-right:  30px; /* справа */
+	padding-bottom: 70px; /* снизу */
+	padding-left:   30px; /* слева */
+	
+	width: 200px;
+	border: 1px solid red;
+	text-align: justify;
+}
+
+#elem1 {
+	width: 100px;
+	height: 100px;
+	background: #f1f1f1;
+	margin-bottom: 20px;
+}
+
+#elem2 {
+	padding: 25px; /* задаем отступы */
+	width: 100px;
+	height: 100px;
+	background: #f1f1f1;
+}

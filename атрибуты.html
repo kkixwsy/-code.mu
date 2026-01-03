@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пользовательские атрибуты data-*</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <h2>Задача 1</h2>
+  <div id="elem1" data-text="1">text</div>
+
+  <h2>Задача 2</h2>
+  <div data-num="1">1 — кликни меня</div>
+  <div data-num="2">2 — кликни меня</div>
+  <div data-num="3">3 — кликни меня</div>
+  <div data-num="4">4 — кликни меня</div>
+  <div data-num="5">5 — кликни меня</div>
+
+  <h2>Задача 3</h2>
+  <button id="btn1">Кликни меня (счётчик)</button>
+  <button id="btn2">Сколько кликов?</button>
+
+  <h2>Задача 4</h2>
+  <input id="inp4" data-length="5" placeholder="введи ровно 5 символов">
+
+  <h2>Задача 5</h2>
+  <input id="inp5" data-min="5" data-max="10" placeholder="от 5 до 10 символов">
+
+  <h2>Задача 6</h2>
+  <div id="elem2" data-product-price="1000" data-product-amount="5">
+	товар яблоки </div>
+
+  <h2>Задача 7</h2>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+
+  <h2>Задача 8</h2>
+  <p id="elem3" class="www ggg zzz"></p>
+
+  <script>
+    // №1
+    elem1.onclick = () => elem1.textContent += elem1.dataset.text;
+
+    // №2
+    document.querySelectorAll('[data-num]').forEach(d => 
+      d.onclick = () => d.textContent += d.dataset.num
+    );
+
+    // №3
+    let count = 0;
+    btn1.onclick = () => btn1.dataset.count = ++count;
+    btn2.onclick = () => alert('Кликов: ' + (btn1.dataset.count || 0));
+
+    // №4
+    inp4.onblur = () => {
+      if (inp4.value.length != inp4.dataset.length)
+        alert('Нужно ровно ' + inp4.dataset.length + ' символов!');
+    };
+
+    // №5
+    inp5.onblur = () => {
+      let len = inp5.value.length;
+      let min = +inp5.dataset.min;
+      let max = +inp5.dataset.max;
+      if (len < min || len > max)
+        alert(`Нужно от ${min} до ${max} символов, а введено ${len}`);
+    };
+    // №6
+    elem2.onclick = () => elem2.textContent += (elem2.dataset.productPrice*elem2.dataset.productAmount);
+
+    // №7
+    document.querySelectorAll('p').forEach((p, i) => 
+      p.setAttribute('data-num', i + 1)
+    );
+  
+    // №8
+    let elem3 = document.querySelector('#elem3');
+    let length = elem3.classList.length;
+    console.log(length);
+
+    // №9
+    let elem3 = document.querySelector('#elem3');
+    let classNames = elem3.classList;
+
+    for (let className of classNames) {
+	console.log(className);
+}
+
+  </script>
+</body>
+</html>
